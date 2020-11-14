@@ -8,6 +8,7 @@ sleep 10
 
 gw=$(ip route | awk '/default/ {print $3}')
 ip route add to ${LOCAL_NET} via $gw dev eth0
+ip route add to ${LOCAL_NET2} via $gw dev eth0
 
 # start
 privoxy --no-daemon
