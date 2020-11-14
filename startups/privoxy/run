@@ -6,9 +6,8 @@ sleep 10
 
 # so return traffic that went through VPN works
 
-gw=$(ip route | awk '/default/ {print $3}')
-ip route add to ${LOCAL_NET} via $gw dev eth0
-ip route add to ${LOCAL_NET2} via $gw dev eth0
+# gw=$(ip route | awk '/default/ {print $3}')
+# ip route add to ${LOCAL_NET} via $gw dev eth0
 
 # start
 privoxy --no-daemon
