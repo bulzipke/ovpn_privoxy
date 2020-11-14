@@ -7,4 +7,4 @@ sleep 15
 # start
 echo "microsocks started"
 
-microsocks
+microsocks -u ${PROXY_USER} -P ${PROXY_PASS}
