@@ -2,4 +2,4 @@
 
 echo "nginx started"
 
-nginx -c /config/nginx.conf
+nginx -c /config/nginx.conf -g 'daemon off;'
