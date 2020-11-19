@@ -2,4 +2,4 @@
 
 echo "php started"
 
-php-fpm7
+php-fpm7 -F
