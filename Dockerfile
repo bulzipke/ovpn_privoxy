@@ -1,7 +1,7 @@
 FROM alpine:latest
 RUN apk update
 RUN apk upgrade
-RUN apk add --no-cache ca-certificates privoxy openvpn runit
+RUN apk add --no-cache ca-certificates privoxy openvpn runit php7 php7-curl php7-fpm php7-openssl php7-pdo_sqlite
 
 RUN wget https://github.com/rofl0r/microsocks/archive/v1.0.1.tar.gz
 
